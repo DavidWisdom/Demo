@@ -17,7 +17,7 @@
             </template>
             <el-menu-item-group>
               <template slot="title">分组一</template>
-                    <router-link to="/about"><el-menu-item index="1-1">摄像头</el-menu-item></router-link>
+              <el-menu-item index="1-1">选项1</el-menu-item>
               <el-menu-item index="1-2">选项2</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group title="分组2">
@@ -92,6 +92,7 @@
             <el-button type="danger">批量删除 <i class="el-icon-remove-outline"></i></el-button>
             <el-button type="primary">批量导入 <i class="el-icon-bottom"></i></el-button>
             <el-button type="primary">批量导出 <i class="el-icon-top"></i></el-button>
+            <router-link to="/about"><el-button type="success" style="margin-left: 10px">摄像头 <i class="el-icon-camera"></i></el-button></router-link>
           </div>
           <el-table :data="tableData" border stripe>
             <el-table-column prop="date" label="日期" width="140">

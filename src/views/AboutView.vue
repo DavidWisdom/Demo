@@ -6,7 +6,7 @@
       <p>效果预览</p>
       <img :src="imgSrc" alt class="tx_img" />
     </div>
-    <div class="button">
+    <div class="button" style="text-align: center">
       <el-button type="danger" @click="getCompetence()">打开摄像头</el-button>
       <el-button type="danger" @click="stopNavigator()">关闭摄像头</el-button>
       <el-button type="danger" @click="setImage()">拍照</el-button>
